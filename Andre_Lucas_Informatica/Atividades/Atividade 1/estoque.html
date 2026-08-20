@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/icone_estoque.png"
+    <title>Estoque</title>
+</head>
+
+<body>
+    <h1 align="center"> Estoque</h1>
+    <table border="2" align="center">
+
+        <caption>Controle de Estoque</caption>
+        <thead>
+            <tr>
+                <th scope="col">Código</th>
+                <th scope="col">Produto</th>
+                <th scope="col">Categoria</th>
+                <th scope="col">Quantidade</th>
+                <th scope="col">Preço</th>
+                <th scope="col">Situação</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>P001</td>
+                <td>Teclado USB</td>
+                <td>Periférico</td>
+                <td>15</td>
+                <td>R$ 89,90</td>
+                <td>Disponível</td>
+            </tr>
+            <tr>
+                <td>P002</td>
+                <td>Mouse Óptico</td>
+                <td>Periférico</td>
+                <td>22</td>
+                <td>R$ 49,90</td>
+                <td>Disponível</td>
+            </tr>
+            <tr>
+                <td>P003</td>
+                <td>Monitor 24</td>
+                <td>Monitor</td>
+                <td>8</td>
+                <td>R$ 899,90</td>
+                <td>Disponível</td>
+            </tr>
+            <tr>
+                <td>P004</td>
+                <td>Notebook</td>
+                <td>Computador</td>
+                <td>3</td>
+                <td>R$ 3.499,90</td>
+                <td>Estoque Baixo</td>
+            </tr>
+            <tr>
+                <td>P005</td>
+                <td>Webcam HD</td>
+                <td>Periférico</td>
+                <td>0</td>
+                <td>R$ 159,90</td>
+                <td>Indisponível</td>
+            </tr>
+            <tr>
+                <td>P006</td>
+                <td>Headset</td>
+                <td>Áudio</td>
+                <td>12</td>
+                <td>R$ 129,90</td>
+                <td>Disponível</td>
+            </tr>
+            <tr>
+                <td>P007</td>
+                <td>SSD 480GB</td>
+                <td>Armazenamento</td>
+                <td>5</td>
+                <td>R$ 299,90</td>
+                <td>Estoque baixo</td>
+            </tr>
+            <tr>
+                <td>P008</td>
+                <td>Memoria RAM 8GB</td>
+                <td>Hardware</td>
+                <td>10</td>
+                <td>R$ 189,90</td>
+                <td>Disponível</td>
+            </tr>
+
+
+        </tbody>
+        <tfoot>
+
+            <tr>
+                <th colspan="3">Total de produtos cadastrados</th>
+                <th colspan="3">Total de itens em estoque</th>
+            </tr>
+            <tr>
+                <td colspan="3" align="center">8</td>
+                <td colspan="3" align="center">75</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <h1 align="center">Resumo do Estoque</h1>
+    <table border="2" align="center">
+
+        <caption>Resumo do Estoque</caption>
+        <thead>
+            <tr>
+                <th scope="col">Informação</th>
+                <th scope="col">Resultado</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <th scope="row">Total de produtos</th>
+                <td align="center">8</td>
+            </tr>
+            <tr>
+                <th scope="row">Total de itens</th>
+                <td align="center">75</td>
+            </tr>
+            <tr>
+                <th scope="row">Produtos disponíveis</th>
+                <td align="center">5</td>
+            </tr>
+            <tr>
+                <th scope="row">Produtos com estoque baixo</th>
+                <td align="center">2</td>
+            </tr>
+            <tr>
+                <th scope="row">Produtos indisponíveis</th>
+                <td align="center">1</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table>
+        <tr>
+            <td>
+                <p align="justify">
+                    <strong>1. Qual é a diferença entre th e td?</strong><br>
+                    th é célula de cabeçalho, o navegador já deixa ela em negrito e centralizada e ela serve
+                    para "nomear" a coluna ou linha. td é célula de dado comum, é onde ficam as informações
+                    de verdade, tipo "P001" ou "R$ 89,90".
+                </p>
+                <p align="justify">
+                    <strong>2. Por que devemos utilizar thead, tbody e tfoot?</strong><br>
+                    Porque eles separam a tabela em três partes com função diferente: thead é o cabeçalho,
+                    tbody é o corpo com os dados, tfoot é o rodapé com totais ou resumos. Isso ajuda
+                    tanto a organizar o código quanto a deixar mais claro para leitores de tela e mecanismos de
+                    busca o que é cada parte.
+                </p>
+                <p align="justify">
+                    <strong>3. Qual é a finalidade do atributo scope="col"?</strong><br>
+                    Ele diz que aquele th é cabeçalho de uma coluna inteira. Assim, um leitor de tela, ao
+                    passar por uma célula de dado, consegue falar "coluna Preço: R$ 89,90", por exemplo, em vez de
+                    só ler o número solto.
+                </p>
+                <p align="justify">
+                    <strong>4. Em quais situações seria utilizado scope="row"?</strong><br>
+                    Quando o cabeçalho está na lateral, identificando uma linha inteira em vez de uma coluna. Por
+                    exemplo, se cada linha da tabela começasse com um th scope="row" mostrando o nome do
+                    produto, e as demais células daquela linha fossem os dados dele.
+                </p>
+                <p align="justify">
+                    <strong>5. Por que o caption pode ser importante para uma tabela?</strong><br>
+                    Ele dá um título/descrição curta para a tabela, dizendo do que ela trata. Ajuda o usuário a
+                    entender rapidamente o conteúdo e ajuda leitores de tela a anunciar o assunto da tabela antes de
+                    começar a ler linha por linha.
+                </p>
+                <p align="justify">
+                    <strong>6. O que poderia acontecer com a acessibilidade da página se todos os dados fossem
+                        colocados apenas em td?</strong><br>
+                    Sem th, a tabela perde a marcação de cabeçalho. Um leitor de tela não consegue mais
+                    associar cada dado à sua coluna, então o usuário ouviria só uma sequência de números e textos
+                    soltos, sem saber se "15" é quantidade, código ou preço. Além disso, a tabela perde significado
+                    semântico para buscadores e outras ferramentas que dependem dessa estrutura.
+                </p>
+            </td>
+        </tr>
+    </table>
+</body>
+
+
+
+
+
+</html>
