@@ -12,27 +12,93 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-color: rgb(220, 220, 220);
+        }
+    </style>
 </head>
 
 <body>
 
-    <header>
-        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom"> <a href="index.html" 
-                class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"> <svg
-                    class="bi me-2" width="40" height="32" aria-hidden="true">
-                    <use xlink:href="#bootstrap"></use>
-                </svg> <span class="fs-4">Home</span> </a>
-            <ul class="nav nav-pills">
-                <li class="nav-item"><a href="index.html" class="nav-link active" aria-current="page">Home</a></li>
-                <li class="nav-item"><a href="quemsomos.html" class="nav-link">Quem somos</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-            </ul>
-        </header>
-      
-    
-    
+    <header class="p-3 text-bg-dark">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"> <a
+                    href="index.html" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                    <img src="/Aula 4 Bootstrap/Meu site com Bootstrap/img/senai-logo.png" width="190" alt="Logo senai">
+                </a>
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                    <li><a href="index.html" class="nav-link px-2 text-secondary fs-5">Home</a></li>
+                    <li><a href="quemsomos.html" class="nav-link px-2 text-white fs-5">Quem somos</a></li>
+                    <li><a href="contatos.html" class="nav-link px-2 text-white fs-5">Contatos</a></li>
+
+                </ul>
+                <a href="login.html" class="btn btn-outline-light me-2">Login</a>
+                <a href="inscricao.html" class="btn btn-warning">Cadastre-se</a>
+
+            </div>
+        </div>
+    </header>
+
+    <main class="container my-5">
+        <img src="/Aula 4 Bootstrap/Meu site com Bootstrap/img/banner.jpg.jpeg" class= "img-fluid rounded mx-auto d-block"
+            alt="Banner inicial"><br><br>
+
+        <div class="card shadow border-0 p-4 p-md-5 bg-white">
+            <div class="card-body">
+
+                <h2 class="text-center mb-4 fw-bold text-dark">
+                    Conheça o SENAI Pernambuco
+                </h2>
+                <hr class="w-25 mx-auto mb-4 text-warning border-2">
+
+                <p class="text-secondary fs-5 text-justify mb-4">
+                    O SENAI Pernambuco (Serviço Nacional de Aprendizagem Industrial) consolidou-se ao longo das décadas
+                    como uma das instituições de referência mais importantes para o desenvolvimento econômico e social
+                    do estado. Fundado com a missão de qualificar a mão de obra para o setor industrial, o SENAI tem
+                    acompanhado de perto as transformações tecnológicas, modernizando constantemente suas metodologias
+                    de ensino para atender às demandas de um mercado cada vez mais competitivo e globalizado.
+                </p>
+                <p class="text-secondary fs-5 text-justify mb-4">
+                    A infraestrutura da instituição é um dos seus grandes diferenciais, contando com uma rede de escolas
+                    técnicas e centros de tecnologia estrategicamente distribuídos por polos industriais fundamentais no
+                    território pernambucano, como a Região Metropolitana do Recife, o Agreste e o Sertão. Esses espaços
+                    são equipados com laboratórios de ponta que simulam o ambiente real das indústrias, permitindo que
+                    os estudantes tenham uma experiência prática alinhada às exigências atuais de automação, robótica e
+                    manufatura avançada.
+                </p>
+                <p class="text-secondary fs-5 text-justify mb-4">
+                    O portfólio educacional oferecido é amplo e diversificado, abrangendo desde a aprendizagem
+                    industrial para jovens que ingressam no mercado de trabalho até cursos técnicos, qualificação
+                    profissional, aperfeiçoamento e graduação tecnológica. Além disso, a instituição destaca-se pela
+                    forte atuação na pós-graduação e em programas de extensão, formando profissionais altamente
+                    capacitados para ocupar funções estratégicas nos mais variados segmentos produtivos, como
+                    metalmecânica, vestuário, alimentos e energias renováveis.
+                </p>
+                <p class="text-secondary fs-5 text-justify mb-4">
+                    Outro pilar de excelência do SENAI Pernambuco é a sua forte conexão com o setor empresarial por meio
+                    de serviços de inovação, consultoria tecnológica e metrologia. Por meio de institutos de tecnologia
+                    e laboratórios credenciados, a entidade apoia indústrias de todos os portes no desenvolvimento de
+                    novos produtos, na otimização de processos produtivos e na implementação de soluções sustentáveis,
+                    impulsionando a competitividade industrial do estado e fomentando o ecossistema de inovação
+                    regional.
+                </p>
+                <p class="text-secondary fs-5 text-justify">
+                    Dessa forma, o SENAI Pernambuco reafirma cotidianamente o seu compromisso com o futuro da indústria
+                    e da sociedade pernambucana, transformando vidas através da educação profissional de excelência. Ao
+                    unir tradição, inovação e visão de futuro, a instituição continua a ser um motor indispensável para
+                    a geração de empregos qualificados, o fortalecimento da economia e o progresso tecnológico
+                    sustentável de toda a região.
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+
+        <h4 align="center">&copy; Todos os Direitos Reservados</h4>
+
+    </footer>
 
 </body>
 
