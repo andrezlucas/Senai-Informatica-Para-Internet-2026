@@ -1,0 +1,28 @@
+body{
+    background-color: darkgrey;
+    margin: 0%;
+}
+
+nav{
+    background-color: rgb(225,174, 0);
+    padding: 10px 10px;
+    text-align: center;
+    border-radius: 200px; 
+    box-sizing: border-box;
+    
+}
+
+nav a{
+    text-decoration: none;
+    color: beige;
+}
+
+nav a:hover{
+    color:black ;
+}
+
+#titulo{
+    text-align: center;
+    
+
+}
